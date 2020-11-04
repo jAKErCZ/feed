@@ -12,6 +12,11 @@ Installation
 
 The best way to install Mk/Feed is using  [Composer](http://getcomposer.org/):
 
+Nette 3
+```sh
+$ composer require jakercz/feed
+```
+Nette 2.4
 ```sh
 $ composer require makr/feed
 ```

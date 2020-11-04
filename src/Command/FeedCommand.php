@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Mk\Feed\Command;
 
-
 use Nette\DI\Container;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -13,6 +12,8 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 final class FeedCommand extends Command
 {
+    protected static $defaultName = 'Feed:export';
+
 	private Container $container;
 
 	/** @var mixed[] */

@@ -30,7 +30,7 @@ final class Storage implements IStorage
 		$dom = new \DOMDocument('1.0');
 		$dom->preserveWhiteSpace = false;
 		$dom->formatOutput = true;
-		$dom->loadXML($xml);
+        $dom->loadXML($xml, LIBXML_PARSEHUGE);
 
 		return $dom->saveXML();
 	}

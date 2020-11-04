@@ -33,8 +33,8 @@ final class FeedExtension extends CompilerExtension
 		}
 		if (class_exists(Command::class)) {
 			$builder->addDefinition($this->prefix('command'))
-				->setFactory(FeedCommand::class, [$config])
-				->addTag('kdyby.console.command');
+				->setFactory(FeedCommand::class, [$config]);
+				//->addTag('console.command');
 		}
 	}
 }
