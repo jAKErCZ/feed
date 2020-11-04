@@ -22,6 +22,7 @@
 		"latte/latte": "^2.5",
 		"contributte/console": "^0.8.0",
 		"contributte/di": "^0.4.0",
+		"symfony/config": "^4.2",
 		"sergiors/importing": "1.0.1"
 	},
 	"require-dev": {
